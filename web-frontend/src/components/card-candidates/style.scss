@@ -1,0 +1,83 @@
+/* Define styles for the .gas class */
+.bright {
+  --color: #d83c3c;
+  --blur: 1.75rem;
+  --box-blur: calc(0.5 * var(--blur));
+  --glow: var(--color);
+
+  align-items: center;
+  border-radius: 1px;
+  border: 2px solid transparent;
+  box-shadow:
+    /* "glass" tube */
+    inset 0 0 0 2px rgba(0, 0, 0, 0.15),
+    0 0 0 2px rgba(0, 0, 0, 0.15),
+    /* glow */
+    inset 0 0 var(--box-blur) var(--glow),
+    0 0 var(--box-blur) var(--glow);
+  color: var(--color, white);
+  width: var(--size);
+  filter: brightness(100%);
+
+  /* Transition for glow effect */
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+/* Apply the glow animation */
+.bright::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  z-index: -1;
+  box-shadow: inset 0 0 var(--box-blur) var(--glow);
+  animation: glow-animation 0.5s infinite alternate;
+}
+
+.bright::after {
+  animation: glow-animation 0.5s infinite alternate;
+}
+
+/* Define the glow animation */
+@keyframes glow-animation {
+  0% {
+    --blur: 1.75rem;
+  }
+  25% {
+    --blur: 1.50rem;
+  }
+  50% {
+    --blur: 1.25rem;
+  }
+  75% {
+    --blur: 1rem;
+  }
+  100% {
+    --blur: 0.75rem;
+  }
+}
+
+.glow {
+  --color: #d83c3c;
+  --blur: 1.75rem;
+  --box-blur: calc(0.5 * var(--blur));
+  --glow: var(--color);
+
+  align-items: center;
+  border-radius: 1px;
+  border: 2px solid transparent;
+  box-shadow:
+    /* "glass" tube */
+    inset 0 0 0 4px rgba(0, 0, 0, 0.15),
+    0 0 0 2px rgba(0, 0, 0, 0.15),
+    /* glow */
+    inset 0 0 var(--box-blur) var(--glow),
+    0 0 var(--box-blur) var(--glow);
+  color: var(--color, white);
+  width: var(--size);
+  filter: brightness(100%);
+  animation: glow-animation 0.8s infinite alternate; /* Added line */
+}

@@ -1,0 +1,14 @@
+{
+  // https://www.typescriptlang.org/tsconfig#compilerOptions
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "outDir": "./build",
+    "rootDir": "./src",
+    "target": "ES6",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+  },
+  "include": [
+    "src/**/*"
+  ],
+}

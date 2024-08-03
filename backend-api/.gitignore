@@ -1,0 +1,6 @@
+node_modules/
+db
+src/db
+/build
+*.env
+secret.key

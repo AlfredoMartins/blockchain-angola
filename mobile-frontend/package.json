@@ -1,0 +1,108 @@
+{
+  "name": "blockchain-angola",
+  "plugins": [
+    [
+      "expo-camera",
+      {
+        "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+        "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
+        "recordAudioAndroid": true
+      },
+      "expo-barcode-scanner",
+      {
+        "cameraPermission": "Allow $(PRODUCT_NAME) to access camera."
+      },
+      "expo-document-picker",
+      {
+        "iCloudContainerEnvironment": "Production"
+      }
+    ]
+  ],
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@expo-google-fonts/roboto": "^0.2.3",
+    "@expo-google-fonts/space-mono": "^0.2.3",
+    "@react-native-masked-view/masked-view": "0.3.1",
+    "@react-navigation/material-bottom-tabs": "^6.2.28",
+    "@react-navigation/material-top-tabs": "^6.6.13",
+    "@react-navigation/native": "^6.1.17",
+    "@react-navigation/native-stack": "^6.9.26",
+    "@react-navigation/stack": "^6.3.29",
+    "@types/react-native-video": "^5.0.20",
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "expo": "~51.0.4",
+    "expo-app-loading": "^2.1.1",
+    "expo-av": "~14.0.4",
+    "expo-barcode-scanner": "~13.0.1",
+    "expo-camera": "~15.0.7",
+    "expo-clipboard": "~6.0.3",
+    "expo-document-picker": "~12.0.1",
+    "expo-font": "~12.0.5",
+    "expo-linear-gradient": "~13.0.2",
+    "expo-modules-core": "^1.12.9",
+    "expo-secure-store": "~13.0.1",
+    "expo-splash-screen": "~0.27.4",
+    "expo-status-bar": "~1.12.1",
+    "firebase": "^10.11.1",
+    "phosphor-react-native": "^2.0.0",
+    "react": "18.2.0",
+    "react-native": "0.74.1",
+    "react-native-check-box": "^2.1.7",
+    "react-native-countdown-component": "^2.7.1",
+    "react-native-dotenv": "^3.4.11",
+    "react-native-flat-button": "^1.0.6",
+    "react-native-gesture-handler": "~2.16.1",
+    "react-native-pager-view": "6.3.0",
+    "react-native-paper": "^5.12.3",
+    "react-native-progress": "^5.0.1",
+    "react-native-rsa-native": "^2.0.5",
+    "react-native-safe-area-context": "4.10.1",
+    "react-native-screens": "3.31.1",
+    "react-native-svg": "15.2.0",
+    "react-native-svg-transformer": "^1.3.0",
+    "react-native-tab-view": "^3.5.2",
+    "react-native-vector-icons": "^10.0.3",
+    "react-native-video": "^5.2.1",
+    "react-player": "^2.16.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@types/jest": "^29.5.12",
+    "@types/react-native": "^0.73.0",
+    "@types/react-native-countdown-component": "^2.7.4",
+    "@types/react-native-vector-icons": "^6.4.18",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "typescript": "^5.1.3"
+  },
+  "overrides": {
+    "@types/react": "~18.2.45"
+  },
+  "private": true,
+  "description": "npx expo start",
+  "author": "Alfredo Martins",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeTyperPro/blockchain-mobile-frontend.git"
+  },
+  "keywords": [
+    "react-native",
+    "typescript",
+    "axios"
+  ],
+  "bugs": {
+    "url": "https://github.com/CodeTyperPro/blockchain-mobile-frontend/issues"
+  },
+  "homepage": "https://github.com/CodeTyperPro/blockchain-mobile-frontend#readme",
+  "resolutions": {
+    "styled-components": "^6"
+  }
+}

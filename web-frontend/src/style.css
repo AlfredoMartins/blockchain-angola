@@ -1,0 +1,13 @@
+.explode-animation {
+    animation: explode 0.5s ease;
+  }
+  
+  @keyframes explode {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
