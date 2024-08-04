@@ -653,7 +653,7 @@ In this particular thesis, we worked with the build of iOS simulator to speed ou
 
 One can also check the multiple builds on the [Expo project page](https://expo.dev/accounts/<username>/projects/election-blockchain-angola/builds).
 
-![Android and iOS Builds](images/illustrations/builds.png)
+![Android and iOS Builds](public/images/build/builds.png)
 
 ## Backend Build
 
@@ -674,8 +674,6 @@ $ vite build
 
 ## Directory
 [back-end]/Dockerfile
-
-
 
 ## Dockerfile Overview
 
