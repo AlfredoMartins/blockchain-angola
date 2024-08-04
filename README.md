@@ -126,20 +126,17 @@ npm is the primary package manager utilized within the Node.js ecosystem. It sim
 
 ### Project Structure
 
-Each part of the project is structured as an individual code base. You can access the source code for each project either from the root of the thesis submission file or by cloning the repositories from GitHub.
+Each part of the project is structured as an individual code base, however, we merged everything in this repository, and we can clone It.
 
 #### Repository Links:
-
-- [Web front-end](https://github.com/CodeTyperPro/blockchain-web-frontend.git)
-- [Mobile front-end](https://github.com/CodeTyperPro/blockchain-mobile-frontend.git)
-- [Back-end](https://github.com/CodeTyperPro/blockchain-backend-api)
+- [Full code-base](https://github.com/AlfredoMartins/blockchain-angola.git)
 
 ### Cloning the Repositories
 
 To clone the repositories to your local development environment, open your terminal or command-line interface and navigate to the directory where you want to clone the project. Then, use the following command:
 
 ```bash
-$ git clone https://github.com/<username>/<repository>
+$ git clone https://github.com/AlfredoMartins/blockchain-angola.git
 > Cloning into `Spoon-Knife`...
 > remote: Counting objects: 10, done.
 > remote: Compressing objects: 100% (8/8), done.
@@ -673,7 +670,7 @@ $ docker ps
 
 A container is a standardized module of software that bundles code and its dependencies, ensuring fast and reliable execution of the application across various computing environments (source).
 
-# Technologies
-
-
-# License
+---
+## Technologies
+---
+## License
