@@ -385,6 +385,7 @@ All data transference is handled by the Express RESTful API server. This server 
 
 ## Base URL of the Application
 
+```perl
 BASE URL -> http://<localhost>:<port>/api/
 SAMPLE BASE URL -> http://localhost:3010/api/
 
@@ -393,7 +394,7 @@ X-Powered-By: Express
 Accept: /
 Connection: keep-alive
 Content-type: application/json; charset=utf-8
-
+```
 
 ## Routes
 
@@ -417,10 +418,9 @@ Here are some of the most important endpoints provided by our REST API. For addi
 
 **Directory**: `src/api/routes/blockchain.routes.ts`
 
-
+```perl
 BASE URL: http://<localhost>:<port>/api/blockchain/
-
-
+```
 
 | **HTTP Request** | **Body** | **Description** |
 | --- | --- | --- |
@@ -595,13 +595,11 @@ When the command is executed, it will ask for the platform(s) in which you need 
 
 It defines three build profiles named "development", "preview", and "production" (you can have multiple build profiles like "production", "debug", "testing", etc.) for each platform. More details about this file and how to set your own configurations can be found at Expo EAS JSON Documentation.
 
-
-
-**Run a build**
+## Run a build
 
 In our scenario, we will not use Build for app stores since it would require us to have a Google Play Store or Apple App Store membership account. This process may be done in the future, but we will not proceed in this way during the thesis. It would require many costs for the developer while the project is still under testing, as this is a very serious process in the country.
 
-**Build for app stores**
+### Build for app stores
 
 ```shell
 # Build for Android
@@ -620,7 +618,7 @@ These commands can take a while, so one can check if it is done executing the co
 $ eas build:list
 ```
 
-*** Build APKs for Android Emulators and devices ***
+### Build APKs for Android Emulators and devices
 Check the file configuration at this link https://docs.expo.dev/build-reference/apk/.
 
 ```shell
@@ -633,7 +631,7 @@ $ eas build:run -p android
 $ eas build:run -p android --latest
 ```
 
-**Build for iOS Simulators**
+### Build for iOS Simulators
 
 Check the file configuration at [this link](https://docs.expo.dev/build-reference/simulators/).
 
