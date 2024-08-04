@@ -368,46 +368,6 @@ BASE URL: http://<localhost>:<port>/api/blockchain/
 | `GET /blocks-detail/:id` | Empty | Returns details of a specific block in the blockchain. |
 | `POST /transaction` | `identifier, choiceCode` | Adds a new transaction to the pending pool and registers it to the blockchain after approval. |
 
-##### Example POST Request (Server-side)
-
-```typescript
-router.post('/transaction', async (req, res) => {
-    let data = req.body;
-    if (checkVote(data.identifier, parseInt(data.choiceCode))) {
-        try {
-            ...
-            if (ans !== null) {
-                res.status(201).send({ node: 'Data received and will be added to the transactions.', details: ans });
-            } else {
-                res.status(401).send({ node: 'Data received but invalid. Please try again later!', ans });
-            }
-        } catch (error) {
-            console.log(error);
-            res.status(401).send({ node: 'Data received but invalid. Please try again later!', data });
-        }
-    } else {
-        res.status(500).send({ node: 'Failed!', data });
-    }
-});
-```
-
-##### Example POST Request (Client-side)
-
-```typescript
-const placeVote = async (): Promise<string> => {
-    const body = { identifier: authState?.electoralId, choiceCode: (id + 1), secret: authState?.token };
-    const response = await axios.post(TRANSACTION_URL, body);
-    const statusCode = response.status;
-
-    if (statusCode === 201) {
-        const transactionHash = response.data.details.transactionHash;
-        return transactionHash;
-    }
-
-    return "";
-}
-```
-
 #### Committee Routes
 
 ```perl
@@ -672,5 +632,3 @@ A container is a standardized module of software that bundles code and its depen
 
 ---
 ## Technologies
----
-## License
