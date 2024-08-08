@@ -26,8 +26,6 @@ You can access the tutorials and demonstrations via the link provided.
 
 # Table of Contents
 
-# Table of Contents
-
 1. [🚀 BlockChain Angola Banner](#-blockchain-angola-banner)
 2. [About Blockchain Angola](#about-blockchain-angola)
 3. [Quick Start Guide](#quick-start-guide)
